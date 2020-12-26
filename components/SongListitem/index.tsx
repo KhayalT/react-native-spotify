@@ -15,8 +15,13 @@ const SongListitem = (props: SongListitemProps) => {
         <View style={styles.container}>
             <Image source={{ uri: props.song.imageUri }} style={styles.image} />
             <View style={styles.rightContainer}>
-                <Text style={styles.title} >{props.song.title}</Text>
-                <Text style={styles.artist}>{props.song.artist}</Text>
+                <View style={styles.textContainer}>
+                    <Text style={styles.title} >{props.song.title}</Text>
+                    <Text style={styles.artist}>{props.song.artist}</Text>
+                </View>
+                <View style={styles.iconContainer}>
+                    <Entypo name="dots-three-vertical" size={25} color="white" />
+                </View>
             </View>
         </View>
 
